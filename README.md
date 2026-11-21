@@ -20,17 +20,17 @@ Nothing is redistributed here. The scripts download:
 
 The analysis was run on Google Colab with a T4 GPU.
 
-1. Open `CLAHE_Figshare_BRISC.ipynb` in Colab (GPU runtime) and run all cells, or run `python src/pipeline.py`.
+1. Open `CLAHE_Figshare_BRISC.ipynb` in Colab (GPU runtime) and run all cells, or run `python pipeline.py`.
 2. Results are written to `CLAHE_BRISC/results/` (audit pairs, mask agreement, classification and XAI tables).
-3. `src/saliency_figure6.py`, run after the pipeline in the same session, retrains ResNet50 (no CLAHE, seed 0) and exports the saliency examples; `src/plot_figure_6_saliency.py` draws Figure 6.
-4. `src/extract_figure_data.py`, `src/plot_figures_1_2_3_5.py` and `src/plot_figure_4_masks.py` produce Figures 1 to 5.
+3. `saliency_figure6.py`, run after the pipeline in the same session, retrains ResNet50 (no CLAHE, seed 0) and exports the saliency examples; `plot_figure_6_saliency.py` draws Figure 6.
+4. `extract_figure_data.py`, `plot_figures_1_2_3_5.py` and `plot_figure_4_masks.py` produce Figures 1 to 5.
 
-Set `SMOKE_TEST = True` at the top of `src/pipeline.py` for a quick check on 150 images.
+Set `SMOKE_TEST = True` at the top of `pipeline.py` for a quick check on 150 images.
 
 ## Files
 
-- `src/` scripts
-- `results/classification_all_seeds.csv` classification and calibration metrics, 3 models × 4 conditions × 3 seeds
+- `*.py` scripts
+- `classification_all_seeds.csv` classification and calibration metrics, 3 models × 4 conditions × 3 seeds
 
 ## License
 
