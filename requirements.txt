@@ -1,0 +1,16 @@
+torch
+torchvision
+numpy
+pandas
+opencv-python
+h5py
+imagehash
+Pillow
+scikit-learn
+scipy
+statsmodels
+grad-cam
+captum
+kagglehub
+matplotlib
+tqdm
